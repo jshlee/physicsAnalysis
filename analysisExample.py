@@ -33,7 +33,7 @@ elecs, elecLabel = Handle("std::vector<cat::Electron>"), "catElectrons"
 jets, jetLabel = Handle("std::vector<cat::Jet>"), "catJets"
 
 # open file
-events = Events("/pnfs/user/CAT/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/v8-0-3_RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_reHLT_80X_mcRun2_asymptotic_v14_ext1-v1/161219_090504/0000/catTuple_1.root")
+events = Events("/home/CAT/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8/v8-0-3_RunIISpring16MiniAODv2-PUSpring16RAWAODSIM_reHLT_80X_mcRun2_asymptotic_v14_ext1-v1/161219_090504/0000/catTuple_1.root")
 
 for iev,event in enumerate(events):
     print "\nEvent %d: run %6d, lumi %4d, event %12d" % (iev,event.eventAuxiliary().run(), event.eventAuxiliary().luminosityBlock(),event.eventAuxiliary().event())
